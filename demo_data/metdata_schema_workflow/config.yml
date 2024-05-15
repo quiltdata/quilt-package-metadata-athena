@@ -1,0 +1,13 @@
+version:
+  base: "1"
+  catalog: "1"
+is_workflow_required: true
+workflows:
+  sra-raw-data:
+    name: Upload raw data obtained from the Sequence Read Archive (SRA)
+    metadata_schema: sra-raw-data
+    handle_pattern: ^ccle/20[0-9]{6}_PRJNA[0-9]{6}_SRR[0-9]{7}$
+    is_message_required: true
+schemas:
+  sra-raw-data:
+    url: s3://quilt-example-bucket/ccle/workflows/sra-raw-data.schema.json
