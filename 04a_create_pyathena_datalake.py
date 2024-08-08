@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# Required Libraries: pip install boto3 pyathena pandas
+# https://laughingman7743.github.io/PyAthena/usage.html#basic-usage
 
 import boto3
 from pyathena import connect
